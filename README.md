@@ -1,77 +1,163 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🌤️ Weather App - Real-Time Weather Detection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material UI">
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## React Compiler
+A modern, responsive **Weather Application** built with cutting-edge web technologies. This application provides real-time weather information for cities around the world, featuring a clean and intuitive user interface that delivers an exceptional user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✨ Key Features
 
-## Expanding the ESLint configuration
+- 🔍 **City Search** - Instantly search weather for any city worldwide
+- 🌡️ **Real-Time Data** - Get current temperature, humidity, and weather conditions
+- 📊 **Weather Details** - Display minimum, maximum, and current temperatures
+- 🎨 **Modern UI** - Clean and professional interface using Material UI
+- 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Technologies Used
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Technology | Purpose |
+|-------------|---------|
+| **React 19** | Frontend library for building user interfaces |
+| **TypeScript** | Type-safe JavaScript for better developer experience |
+| **Vite** | Next-generation frontend tooling |
+| **Material UI** | Comprehensive UI component library |
+| **ESLint** | Code linting for maintaining quality |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📸 Project Preview
+
+### Application Screenshot
+
+<p align="center">
+  <img src="C:\Users\rajak\OneDrive\Desktop\Pictures\Screenshots\Screenshot 2026-03-07 142744.png" alt="Weather App Screenshot" width="800">
+</p>
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Before running this project, ensure you have the following installed:
+
+- **Node.js** (v18 or higher)
+- **npm** or **yarn**
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/mini_project_react.git
+   ```
+
+2. **Navigate to the project directory**
+   ```bash
+   cd mini_project_react
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application.
+
+### Building for Production
+
+6. **Create production build**
+   ```bash
+   npm run build
+   ```
+
+7. **Preview production build**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 📁 Project Structure
+
+```
+mini_project_react/
+├── public/                  # Static assets
+├── src/
+│   ├── assets/             # Images and media
+│   ├── App.css             # Main application styles
+│   ├── App.tsx             # Main application component
+│   ├── InfoBox.tsx         # Weather information display
+│   ├── InfoBox.css         # InfoBox styles
+│   ├── main.tsx            # Application entry point
+│   ├── materialUi.jsx      # Material UI configuration
+│   ├── SearchBox.tsx       # City search component
+│   ├── SearchBox.css       # SearchBox styles
+│   ├── WeatherApp.tsx      # Main weather application
+│   └── index.css           # Global styles
+├── index.html              # HTML template
+├── package.json            # Project dependencies
+├── vite.config.ts          # Vite configuration
+└── tsconfig.json           # TypeScript configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🎯 Usage Guide
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# react_mini_project_for_weather_detect
->>>>>>> 48a71a911ab0f0f7122e8bafb2939b37e27f99ff
+1. **Search for a City**: Enter the name of any city in the search box
+2. **View Weather Data**: The application displays:
+   - Current temperature
+   - Minimum and maximum temperatures
+   - Humidity percentage
+   - Weather condition (sunny, cloudy, rainy, etc.)
+3. **Real-Time Updates**: Weather data is fetched in real-time
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Developer
+
+**Your Name Here**
+
+- GitHub: [sanjana012s]
+- Email: [sanjana081220@gmail.com]
+
+---
+
+<p align="center">
+  <strong>⭐ Star this repository if you found it helpful!</strong>
+</p>
+
+<p align="center">
+  Built with ❤️ using React, TypeScript, and Material UI
+</p>
+
