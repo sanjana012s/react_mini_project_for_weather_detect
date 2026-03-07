@@ -1,0 +1,40 @@
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.weatherCard {
+  width: 360px;
+  border-radius: 20px !important;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.15) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.weatherCard:hover {
+  transform: scale(1.05);
+}
+
+.weatherImage {
+  height: 200px;
+}
+
+.cityTitle {
+  font-size: 26px !important;
+  font-weight: bold !important;
+  margin-bottom: 10px !important;
+}
+
+.weatherText {
+  font-size: 18px !important;
+  margin: 5px 0 !important;
+}
+
+.noData {
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(121, 114, 114);
+}
