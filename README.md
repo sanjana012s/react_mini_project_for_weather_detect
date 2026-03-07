@@ -39,9 +39,7 @@ A modern, responsive **Weather Application** built with cutting-edge web technol
 
 ### Application Screenshot
 
-<p align="center">
-  <img src="/weather-app-screenshot.png" alt="Weather App Screenshot" width="800">
-</p>
+![Weather App Screenshot](./weather-app-screenshot.png)
 
 ---
 
