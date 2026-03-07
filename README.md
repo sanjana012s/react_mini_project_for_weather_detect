@@ -40,7 +40,7 @@ A modern, responsive **Weather Application** built with cutting-edge web technol
 ### Application Screenshot
 
 <p align="center">
-  <img src="C:\Users\rajak\OneDrive\Desktop\Pictures\Screenshots\Screenshot 2026-03-07 142744.png" alt="Weather App Screenshot" width="800">
+  <img src="/weather-app-screenshot.png" alt="Weather App Screenshot" width="800">
 </p>
 
 ---
